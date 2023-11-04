@@ -1,14 +1,54 @@
-import SectionTitle from './common/SectionTitle';
+import SectionTitle from '../../components/common/SectionTitle';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import pannels from '../assets/images/categories/pannels.png';
-import accessories from '../assets/images/categories/accessories.png';
-import generators from '../assets/images/categories/generators.png';
-import charge_controllers from '../assets/images/categories/charge_controllers.png';
-import mask from '../assets/images/categories/Mask-group.png';
-import batteries from '../assets/images/categories/batteries.png';
-import Container from './common/Container';
+import Container from '../../components/common/Container';
+
+import pannels from '../../assets/images/categories/pannels.png';
+import accessories from '../../assets/images/categories/accessories.png';
+import generators from '../../assets/images/categories/generators.png';
+import charge_controllers from '../../assets/images/categories/charge_controllers.png';
+import mask from '../../assets/images/categories/Mask-group.png';
+import batteries from '../../assets/images/categories/batteries.png';
+
+const categories = [
+  {
+    id: 1,
+    image: mask,
+    name: 'Solar inverters',
+    link: '',
+  },
+  {
+    id: 2,
+    image: pannels,
+    name: 'Solar panels',
+    link: '',
+  },
+  {
+    id: 3,
+    image: batteries,
+    name: 'Batteries',
+    link: '',
+  },
+  {
+    id: 4,
+    image: charge_controllers,
+    name: 'Charge Controllers',
+    link: '',
+  },
+  {
+    id: 5,
+    image: generators,
+    name: 'Generators',
+    link: '',
+  },
+  {
+    id: 6,
+    image: accessories,
+    name: 'Accessories',
+    link: '',
+  },
+];
 
 const Categories = () => {
   const settings = {
@@ -19,6 +59,7 @@ const Categories = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -56,44 +97,6 @@ const Categories = () => {
     ],
   };
 
-  const categories = [
-    {
-      id: 1,
-      image: mask,
-      name: 'Solar inverters',
-      link: '',
-    },
-    {
-      id: 2,
-      image: pannels,
-      name: 'Solar pannels',
-      link: '',
-    },
-    {
-      id: 3,
-      image: batteries,
-      name: 'Batteries',
-      link: '',
-    },
-    {
-      id: 4,
-      image: charge_controllers,
-      name: 'Charge Controllers',
-      link: '',
-    },
-    {
-      id: 5,
-      image: generators,
-      name: 'Genarators',
-      link: '',
-    },
-    {
-      id: 6,
-      image: accessories,
-      name: 'Accesssories',
-      link: '',
-    },
-  ];
   return (
     <section className="py-10">
       <SectionTitle
@@ -106,7 +109,7 @@ const Categories = () => {
             {categories.map(category => (
               <div key={category.id} className="flex justify-center">
                 <div className="flex flex-col justify-center items-center">
-                  <img src={category.image} alt="image" className="h-20 " />
+                  <img src={category.image} alt="image" className="h-20" />
                   <p>{category.name}</p>
                 </div>
               </div>

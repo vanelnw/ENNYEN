@@ -1,5 +1,6 @@
-import Container from './common/Container';
-import SectionTitle from './common/SectionTitle';
+import { NavLink } from 'react-router-dom';
+import Container from '../../components/common/Container';
+import SectionTitle from '../../components/common/SectionTitle';
 
 const statesData = [
   {
@@ -212,19 +213,11 @@ const RegionsSection = () => {
         title2="Find Your Perfect Match by  Region!"
       />
       <Container>
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-5 text-green mt-5">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-5 mt-5">
           {statesData.map(section => (
-            <div key={section.id}>
+            <NavLink to="" key={section.id} className="text-green-700">
               <p>{section.name}</p>
-
-              {/* <ul className="mt-6 space-y-4 text-sm">
-                {section.links.map(link => (
-                  <li key={link.text}>
-                    <a href={link.href}>{link.text}</a>
-                  </li>
-                ))}
-              </ul> */}
-            </div>
+            </NavLink>
           ))}
         </div>
       </Container>

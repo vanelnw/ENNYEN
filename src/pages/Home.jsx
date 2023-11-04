@@ -1,32 +1,30 @@
+import React from 'react';
+import Header from '../components/home/hero/Header';
+import Navbar from '../components/home/hero/Navbar';
+import Hero from '../components/home/Hero';
+import Intro from '../components/home/Intro';
+import ContentSectionWrapper from '../components/home/ContentSetion';
+import Categories from '../components/home/Categories';
+import FactoriesSection from '../components/home/FactoriesSection';
 import AdvertSection from '../components/home/AdvertSection';
-import CTA from '../components/CTA';
-import Categories from '../components/Categories';
-import ContentSetion from '../components/ContentSetion';
-import FactoriesSection from '../components/FactoriesSection';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Intro from '../components/Intro';
-import Navbar from '../components/Navbar';
-import RegionsSection from '../components/RegionsSection';
-import Testimonials from '../components/Testimonials';
-import TradingSection from '../components/TradingSection';
+import TradingSection from '../components/home/TradingSection';
+import Testimonials from '../components/home/Testimonials';
+import CTA from '../components/home/CTA';
+import RegionsSection from '../components/home/RegionsSection';
+import Footer from '../components/home/Footer';
 import Advert from '../components/home/Advert';
 
 const Home = () => {
   return (
-    <div className="">
-      <div className="h-screen flex flex-col">
-        <Advert />
-        <Header />
-        <Navbar />
-        <div className="flex-1">
-          <Hero />
-        </div>
+    <div className="flex flex-col h-screen">
+      <Advert />
+      <Header />
+      <Navbar />
+      <div className="flex-1">
+        <Hero />
       </div>
-
       <Intro />
-      <ContentSetion />
+      <ContentSectionWrapper />
       <Categories />
       <FactoriesSection />
       <AdvertSection />
