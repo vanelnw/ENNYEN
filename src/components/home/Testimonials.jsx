@@ -4,7 +4,7 @@ import SectionTitle from '../../components/common/SectionTitle';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import hero1 from '../../assets/images/hero1.png';
+import testiImage from '../../assets/ennyen_pictures/ennyen_testimonial_section.jpeg';
 import TestimonialSlide from './Testimonials/TestimonialSlice';
 import SampleNextvArrow from './Testimonials/SampleNextArrow';
 import SamplePrevArrow from './Testimonials/SamplePreArrow';
@@ -28,21 +28,21 @@ const Testimonials = () => {
       rating: 5,
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       author: 'John Doe',
-      authorImage: hero1,
+      authorImage: testiImage,
     },
     {
       id: 2,
       rating: 5,
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       author: 'Jane Doe',
-      authorImage: hero1,
+      authorImage: testiImage,
     },
     {
       id: 3,
       rating: 5,
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       author: 'Bob Smith',
-      authorImage: hero1,
+      authorImage: testiImage,
     },
   ];
 

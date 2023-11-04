@@ -112,13 +112,13 @@ body {
 
 @media (min-width: 1024px) {
   .slick-slider {
-    height: 81%;
+    height: 92%;
   }
 }
 
-@media (min-width: 10200px) {
+@media (min-width: 1200px) {
   .slick-slider {
-    height: 87%;
+    height: 80%;
   }
 }
 

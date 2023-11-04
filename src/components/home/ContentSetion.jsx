@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Container from '../../components/common/Container';
+import content2 from '../../assets/ennyen_pictures/ennyen_message_dashboard.png';
 import content1 from '../../assets/images/content1.png';
-import content2 from '../../assets/images/content2.png';
 
 const ContentSection = ({ title, description, imageSrc, imagePosition }) => {
   const isLeftImage = imagePosition === 'left';

@@ -1,11 +1,11 @@
 import Container from '../../components/common/Container';
 import SectionTitle from '../../components/common/SectionTitle';
-import arrival1 from '../../assets/images/arrival1.png';
-import arrival2 from '../../assets/images/arrival2.png';
-import arrival3 from '../../assets/images/arrival3.png';
-import deal1 from '../../assets/images/deal1.png';
-import deal2 from '../../assets/images/deal2.png';
-import deal3 from '../../assets/images/deal3.png';
+import arrival1 from '../../assets/ennyen_pictures/ennyen_product_4.jpeg';
+import arrival2 from '../../assets/ennyen_pictures/ennyen_product_3.jpeg';
+import arrival3 from '../../assets/ennyen_pictures/ennyen_prodcut_section.jpeg';
+import deal1 from '../../assets/ennyen_pictures/ennyen_produtct_2.jpeg';
+import deal2 from '../../assets/ennyen_pictures/ennyen_product.jpeg';
+import deal3 from '../../assets/ennyen_pictures/ennyen_product.png';
 import BestDeals from '../../components/BestDeals';
 import NewArrivals from '../../components/NewArrivals';
 

@@ -4,8 +4,8 @@ import SectionTitle from '../../components/common/SectionTitle';
 import { CiLocationOn } from 'react-icons/ci';
 import { BsChevronRight } from 'react-icons/bs';
 import img1 from '../../assets/images/hero1.png';
-import img2 from '../../assets/images/hero2.png';
-import img3 from '../../assets/images/hero3.png';
+import factory1 from '../../assets/ennyen_pictures/ennyen_factory.jpeg';
+import fatory2 from '../../assets/ennyen_pictures/ennyen_factory_2.jpeg';
 
 const factories = [
   {
@@ -14,12 +14,12 @@ const factories = [
     location: 'Guangzhou, China',
   },
   {
-    src: img2,
+    src: factory1,
     title: 'Shushan & Co. LTD',
     location: 'Frankfurt, Germany',
   },
   {
-    src: img3,
+    src: fatory2,
     title: 'QBWW SolarSuppliers GmBH',
     location: 'Frankfurt, Germany',
   },
@@ -27,7 +27,11 @@ const factories = [
 
 const FactoryCard = ({ src, title, location, index }) => (
   <div className={index === 0 ? 'row-span-2 relative' : 'relative'}>
-    <img src={src} alt={title} />
+    <img
+      src={src}
+      alt={title}
+      className={index === 0 ? '' : 'h-60 w-full object-cover'}
+    />
 
     <div className="absolute bottom-0 left-0 w-full p-5 bg-[#000] opacity-[.5]">
       <h2 className="text-white font-bold text-[1.5rem] max-w-xs">{title}</h2>

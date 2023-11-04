@@ -12,7 +12,7 @@ const NewArrivals = ({ img1, img2 }) => {
           className={
             img2
               ? 'rounded-lg w-1/2 h-40 lg:h-50 lg:w-40 object-cover '
-              : 'rounded-lg h-full w-full object-cover '
+              : 'rounded-lg w-full h-40 object-cover'
           }
         />
         {img2 && (

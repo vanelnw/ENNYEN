@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../components/home/hero/Header';
 import Navbar from '../components/home/hero/Navbar';
 import Hero from '../components/home/Hero';
@@ -9,10 +8,10 @@ import FactoriesSection from '../components/home/FactoriesSection';
 import AdvertSection from '../components/home/AdvertSection';
 import TradingSection from '../components/home/TradingSection';
 import Testimonials from '../components/home/Testimonials';
-import CTA from '../components/home/CTA';
 import RegionsSection from '../components/home/RegionsSection';
 import Footer from '../components/home/Footer';
 import Advert from '../components/home/Advert';
+import Newsletter from '../components/home/Newsletter';
 
 const Home = () => {
   return (
@@ -30,7 +29,7 @@ const Home = () => {
       <AdvertSection />
       <TradingSection />
       <Testimonials />
-      <CTA />
+      <Newsletter />
       <RegionsSection />
       <Footer />
     </div>

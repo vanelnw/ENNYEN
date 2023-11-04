@@ -1,11 +1,11 @@
-import hero2 from '../../assets/images/hero2.png';
-import Container from '../../components/common/Container';
+import newsLetterImg from '../../assets/ennyen_pictures/ennyen_news_letter_section.jpeg';
+import Container from '../common/Container';
 
-const CTA = () => {
+const Newsletter = () => {
   return (
     <section
-      className="overflow-hidden bg-cover bg-top bg-no-repeat"
-      style={{ backgroundImage: `url(${hero2})` }}>
+      className="bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${newsLetterImg})` }}>
       <Container>
         <div className="p-6 md:p-8 lg:px-10 lg:py-18 flex justify-center md:justify-end">
           <div className="max-w-sm bg-white shadow-sm rounded-xl text-start p-7">
@@ -38,4 +38,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default Newsletter;
