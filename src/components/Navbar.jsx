@@ -1,7 +1,7 @@
 import { BiMenu } from 'react-icons/bi';
 import Container from './common/Container';
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div className=" bg-green">
       <Container>
@@ -24,5 +24,4 @@ const NavBar = () => {
     </div>
   );
 };
-
-export default NavBar;
+export default Navbar;

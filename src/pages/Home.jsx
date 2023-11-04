@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
-import NavBar from '../components/NavBar';
+import Navbar from '../components/Navbar';
 import RegionsSection from '../components/RegionsSection';
 import Testimonials from '../components/Testimonials';
 import TradingSection from '../components/TradingSection';
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="h-screen flex flex-col">
         <Advert />
         <Header />
-        <NavBar />
+        <Navbar />
         <div className="flex-1">
           <Hero />
         </div>
