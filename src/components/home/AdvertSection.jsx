@@ -1,13 +1,13 @@
-import Container from './common/Container';
-import SectionTitle from './common/SectionTitle';
-import arrival1 from '../assets/images/arrival1.png';
-import arrival2 from '../assets/images/arrival2.png';
-import arrival3 from '../assets/images/arrival3.png';
-import deal1 from '../assets/images/deal1.png';
-import deal2 from '../assets/images/deal2.png';
-import deal3 from '../assets/images/deal3.png';
-import BestDeals from './BestDeals';
-import NewArrivals from './NewArrivals';
+import Container from '../../components/common/Container';
+import SectionTitle from '../../components/common/SectionTitle';
+import arrival1 from '../../assets/images/arrival1.png';
+import arrival2 from '../../assets/images/arrival2.png';
+import arrival3 from '../../assets/images/arrival3.png';
+import deal1 from '../../assets/images/deal1.png';
+import deal2 from '../../assets/images/deal2.png';
+import deal3 from '../../assets/images/deal3.png';
+import BestDeals from '../../components/BestDeals';
+import NewArrivals from '../../components/NewArrivals';
 
 const AdvertSection = () => {
   return (
