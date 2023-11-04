@@ -1,7 +1,7 @@
-import logo from '../assets/images/logo.png';
+import logo from '../../../assets/images/logo.png';
 import { BsSearch, BsPerson } from 'react-icons/bs';
 import { IoLanguageOutline } from 'react-icons/io5';
-import Container from '../../common/Container';
+import Container from '../../../components/common/Container';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
