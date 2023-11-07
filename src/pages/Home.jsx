@@ -15,12 +15,14 @@ import Newsletter from '../components/home/Newsletter';
 
 const Home = () => {
   return (
-    <div className="flex flex-col h-screen">
-      <Advert />
-      <Header />
-      <Navbar />
-      <div className="flex-1">
-        <Hero />
+    <>
+      <div className="flex flex-col h-screen">
+        <Advert />
+        <Header />
+        <Navbar />
+        <div className="flex-1">
+          <Hero />
+        </div>
       </div>
       <Intro />
       <ContentSectionWrapper />
@@ -32,7 +34,7 @@ const Home = () => {
       <Newsletter />
       <RegionsSection />
       <Footer />
-    </div>
+    </>
   );
 };
 
