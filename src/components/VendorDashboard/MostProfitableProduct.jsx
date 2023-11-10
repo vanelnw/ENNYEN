@@ -29,21 +29,23 @@ const MostProfitableProduct = () => {
     },
   ];
   return (
-    <div className="relative grid p-[20px] rounded-md shadow-md border ">
-      <div className="cardHeader flex justify-between">
+    <div className="relative grid p-[20px] rounded-md shadow-md border  border-gray">
+      <div className="cardHeader flex justify-between items-center">
         <h2>Top 5 most profitable products</h2>
         <a href="#" className="btn">
-          <BsThreeDots />
+          <BsThreeDots size={22} color="#000" />
         </a>
       </div>
 
       <table className="w-full mt-2">
         <tbody>
           {ProfitableProduct.map((product, index) => (
-            <tr key={index} className={`hover:bg-blue hover:text-white`}>
-              <td className="p-1">{product.id}</td>
+            <tr
+              key={index}
+              className={`hover:bg-blue hover:text-white text-[#606060] text-[1rem]`}>
+              <td className="p-1 py-3">{product.id}</td>
               <td className="p-1">{product.name}</td>
-              <td className="p-1">{product.price}</td>
+              <td className="p-1 text-[#000]">{product.price}</td>
             </tr>
           ))}
         </tbody>

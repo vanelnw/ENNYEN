@@ -13,14 +13,14 @@ const OrdersChart = () => {
   };
 
   const options = {
-    maintainAspectRatio: false, // Disable aspect ratio to make it a perfect circle
+    maintainAspectRatio: false,
     plugins: {
       title: {
-        display: true,
+        display: false,
         text: 'Order Statistics',
       },
       legend: {
-        display: false, // Hide default legend
+        display: false,
       },
     },
   };
@@ -28,7 +28,7 @@ const OrdersChart = () => {
   const legendItems = chartData.labels.map((label, index) => (
     <div key={index} className="legend-item flex gap-2">
       <div
-        className="legend-color h-6 w-6 rounded-full "
+        className="legend-color h-5 w-5 rounded-full text-[.8rem]"
         style={{
           backgroundColor: chartData.datasets[0].backgroundColor[index],
         }}
@@ -39,7 +39,8 @@ const OrdersChart = () => {
   ));
   return (
     <div className="order-chart-container p-5">
-      <div className="chart">
+      <h1 className="font-bold">Order Statistics</h1>
+      <div className="chart h-40">
         <Doughnut data={chartData} options={options} />
       </div>
       <div className="legend flex flex-col gap-2">

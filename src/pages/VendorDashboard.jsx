@@ -15,8 +15,9 @@ const VendorDashboard = () => {
       />
       <Content
         onSidebarHide={() => {
-          onSetShowSidebar(true);
+          onSetShowSidebar(!showSidebar);
         }}
+        showSidebar={showSidebar}
       />
     </div>
   );

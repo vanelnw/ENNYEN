@@ -29,21 +29,23 @@ const MostProfitableCategories = () => {
     },
   ];
   return (
-    <div className="relative grid p-[20px] rounded-md shadow-md border ">
-      <div className="cardHeader flex justify-between">
+    <div className="relative grid p-[20px] rounded-md shadow-md border  border-gray">
+      <div className="cardHeader flex justify-between items-center">
         <h2>Top 5 most profitable categories</h2>
         <a href="#" className="btn">
-          <BsThreeDots />
+          <BsThreeDots size={22} color="#000" />
         </a>
       </div>
 
       <table className="w-full mt-2">
         <tbody>
           {ProfitableCat.map((cat, index) => (
-            <tr key={index} className={`hover:bg-blue hover:text-white`}>
-              <td className="p-1">{cat.id}</td>
+            <tr
+              key={index}
+              className={`hover:bg-blue hover:text-white text-[#606060] text-[1rem]`}>
+              <td className="p-1 py-3">{cat.id}</td>
               <td className="p-1">{cat.name}</td>
-              <td className="p-1">{cat.price}</td>
+              <td className="p-1 text-[#000]">{cat.price}</td>
             </tr>
           ))}
         </tbody>
