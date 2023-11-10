@@ -101,25 +101,7 @@ body {
 }
 
 .slick-slider {
-  height: 95%;
-}
-
-@media (min-width: 700px) {
-  .slick-slider {
-    height: 92%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .slick-slider {
-    height: 92%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .slick-slider {
-    height: 80%;
-  }
+  height: 98%;
 }
 
 .slick-list {

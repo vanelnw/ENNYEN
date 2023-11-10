@@ -16,7 +16,7 @@ import Newsletter from '../components/home/Newsletter';
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen pb-7">
         <Advert />
         <Header />
         <Navbar />

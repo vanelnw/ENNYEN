@@ -20,7 +20,7 @@ const Content = ({ onSidebarHide }) => {
               <div className="flex items-center justify-between flex-grow-0 flex-shrink pl-2 relative w-60 border rounded-full px-1  py-1">
                 <input
                   type="text"
-                  placeholder="Serah ENNYEN"
+                  placeholder="Search Anything..."
                   className="h-18"
                 />
                 <button
