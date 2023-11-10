@@ -31,7 +31,7 @@ const Sidebar = ({ showSidebar, onSidebarHide }) => {
           <img src={logo} className="w-36 h-12" />
           <div className="flex-grow sm:hidden xl:block" />
           <AiFillCloseCircle
-            className="block sm:hidden"
+            className="block sm:hidden cursor-pointer"
             onClick={onSidebarHide}
           />
         </div>
